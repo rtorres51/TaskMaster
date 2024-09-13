@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/paleta">
+
+        <!-- Nombre de la tarea -->
+        <TextView
+            android:id="@+id/tvTaskName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre de la actividad"
+            android:textSize="28sp"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <!-- Estado de la tarea -->
+        <TextView
+            android:id="@+id/tvTaskStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado de la tarea"
+            android:textSize="24sp"
+            android:textColor="#666" />
+
+        <!-- Hora de la tarea -->
+        <TextView
+            android:id="@+id/tvTaskTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Hora"
+            android:textSize="34sp" />
+
+        <!-- Fecha de la tarea -->
+        <TextView
+            android:id="@+id/tvTaskDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Fecha"
+            android:textSize="24sp"
+            android:textColor="#666"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Botones para editar y eliminar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/btnEditTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/fondo"
+                android:text="Editar"
+                android:textColor="#E7E5E5" />
+
+            <Button
+                android:id="@+id/btnDeleteTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/rojo"
+                android:text="Eliminar"
+                android:textColor="#E7E5E5" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
